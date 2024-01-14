@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>CLASS AND OBJECT</h1>
+    <script>
+class Robot{
+    constructor(name,dob,battery,domain,arms,legs){
+        this.name = name
+        this.dob = dob
+        this.battery = battery
+        this.domain = domain
+        this.arms = arms
+        this.legs = legs
+    }
+
+    operation(){
+        console.log(`${this.name} is operating a patient.`)
+    }
+
+    prescribeMedicine(){
+        console.log(`${this.name} is prescribing a medicine for the patient.`)
+    }
+
+    introduction(){
+        document.write(`
+        My name is ${this.name} and I am your surgeon today.
+        I can work at my best as my battery size is ${this.battery}.
+        I am expertise in ${this.domain}.
+        I have ${this.arms} arms and ${this.legs} legs.
+        ` )
+    }
+}
+robot1 = new Robot('Manella Robot','14Jan2024','5000MAH','Health Sector',2,2)
+</script>
+</body>
+</html>
